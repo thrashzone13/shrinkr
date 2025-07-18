@@ -19,7 +19,7 @@ export class Url {
   @Column({ type: 'varchar' })
   url: string;
 
-  @Column({ type: 'varchar' })
+  @Column({ type: 'varchar', unique: true })
   hash: string;
 
   @CreateDateColumn()
