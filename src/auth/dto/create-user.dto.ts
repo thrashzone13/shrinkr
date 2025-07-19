@@ -16,4 +16,12 @@ export class CreateUserDto {
   @IsString()
   @MinLength(6)
   password: string;
+
+  @IsString()
+  @MinLength(3)
+  firstName?: string;
+
+  @IsString()
+  @MinLength(3)
+  lastName?: string;
 }
